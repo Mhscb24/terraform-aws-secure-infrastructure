@@ -23,6 +23,11 @@ Apache webpage running on the EC2 instance provisioned with Terraform.
 CloudTrail was verified logging with multi-region coverage and log file validation enabled. The console reported successful log delivery on October 6, 2026.
 
 ![CloudTrail logging status](docs/images/02-cloudtrail-status.png)
+### Log delivery to S3
+
+A CloudTrail log object was verified in the S3 audit bucket on October 5, 2026.
+
+![CloudTrail log object in S3](docs/images/03-cloudtrail-log-delivery.png)
 ## Architecture
 
 ```mermaid
