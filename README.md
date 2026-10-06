@@ -18,7 +18,11 @@ Apache webpage running on the EC2 instance provisioned with Terraform.
 
 ![Live Apex Federal Solutions website](docs/images/01-live-website.png)
 
+## CloudTrail verification
 
+CloudTrail was verified logging with multi-region coverage and log file validation enabled. The console reported successful log delivery on October 6, 2026.
+
+![CloudTrail logging status](docs/images/02-cloudtrail-status.png)
 ## Architecture
 
 ```mermaid
