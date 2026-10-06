@@ -28,16 +28,23 @@ CloudTrail was verified logging with multi-region coverage and log file validati
 A CloudTrail log object was verified in the S3 audit bucket on October 5, 2026.
 
 ![CloudTrail log object in S3](docs/images/03-cloudtrail-log-delivery.png)
+
+## S3 public access protection
+
+The audit bucket was verified with Block all public access turned on.
+
+## S3 public access protection
+
+The audit bucket was verified with Block all public access turned on.
+
+![S3 Block all public access enabled](docs/images/04-s3-block-public-access.png)
 ## Architecture
 
 ```mermaid
 flowchart TD
     Browser["Browser"] -->|HTTP port 80| Gateway["Internet gateway"]
-    subgraph VPC["VPC: 10.0.0.0/16"]
-        Public["Public subnet: 10.0.1.0/24"] --> Web["EC2: Apache web server"]
-        Private["Private subnet: 10.0.2.0/24"]
-    end
-    Gateway --> Public
+    Gateway --> Public["Public subnet: 10.0.1.0/24"]
+    Public --> Web["EC2 Apache web server"]
     Trail["Multi-region CloudTrail"] -->|Audit logs| Bucket["S3 audit bucket"]
 ```
 
