@@ -33,11 +33,14 @@ A CloudTrail log object was verified in the S3 audit bucket on October 5, 2026.
 
 The audit bucket was verified with Block all public access turned on.
 
-## S3 public access protection
-
-The audit bucket was verified with Block all public access turned on.
-
 ![S3 Block all public access enabled](docs/images/04-s3-block-public-access.png)
+## S3 encryption and versioning
+
+The audit bucket was verified with default SSE-S3 encryption and bucket versioning enabled.
+
+![S3 default encryption](docs/images/05-s3-encryption.png)
+
+![S3 bucket versioning enabled](docs/images/06-s3-versioning.png)
 ## Architecture
 
 ```mermaid
