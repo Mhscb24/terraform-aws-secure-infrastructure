@@ -12,6 +12,12 @@ This portfolio lab uses Terraform to define an AWS network, an Apache web server
 The configuration creates public and private subnets, deploys an EC2 instance in the public subnet, and configures a multi-region CloudTrail trail to deliver logs to an S3 bucket with public access blocked.
 
 The fictional organization name **Apex Federal Solutions** appears in resource names and the demo webpage. This is a learning project and does not represent a federal deployment or establish compliance with a regulatory framework.
+## Live website
+
+Apache webpage running on the EC2 instance provisioned with Terraform.
+
+![Live Apex Federal Solutions website](docs/images/01-live-website.png)
+
 
 ## Architecture
 
