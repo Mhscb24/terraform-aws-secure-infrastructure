@@ -41,6 +41,12 @@ The audit bucket was verified with default SSE-S3 encryption and bucket versioni
 ![S3 default encryption](docs/images/05-s3-encryption.png)
 
 ![S3 bucket versioning enabled](docs/images/06-s3-versioning.png)
+
+## Terraform verification
+
+On October 6, 2026, `terraform plan` reported no changes: the deployed infrastructure matched the configuration.
+
+![Terraform plan showing no changes](docs/images/07-terraform-no-changes.png)
 ## Architecture
 
 ```mermaid
